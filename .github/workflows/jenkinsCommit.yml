@@ -18,13 +18,14 @@ jobs:
         # Replace these commands with your build and test scripts
         echo "Building and testing your application..."
 
-    - name: Deploy to Jenkins
-      uses: appleboy/jenkins-action@master
-      with:
-        url: 192.168.29.213/8080
-        user: abhigya
-        token: 11fce885dc7043a5011b4c299e014c4f0d
-        job: jenkins-git
+    # - name: Deploy to Jenkins
+    #   uses: appleboy/jenkins-action@master
+    #   with:
+    #     url: 192.168.29.213/8080
+    #     user: abhigya
+    #     token: 11fce885dc7043a5011b4c299e014c4f0d
+    #     job: jenkins-git
+    
     - name: Trigger Jenkins Job
       run: |
         curl -X POST http://192.168.29.213:8080/buildByToken/buildWithParameters?job=jenkins-git&token=11fce885dc7043a5011b4c299e014c4f0d
