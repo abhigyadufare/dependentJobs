@@ -19,7 +19,7 @@ jobs:
         echo "Building and testing your application..."
 
     - name: Deploy to Jenkins
-      uses: appleboy/jenkins-action@v2
+      uses: appleboy/jenkins-action@main
       with:
         url: 192.168.29.213/8080
         user: abhigya
