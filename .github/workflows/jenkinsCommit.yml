@@ -28,4 +28,4 @@ jobs:
     
     - name: Trigger Jenkins Job
       run: |
-        curl -X POST http://192.168.29.213:8080/buildByToken/buildWithParameters?job=jenkins-git&token=11fce885dc7043a5011b4c299e014c4f0d
+        curl -X POST http://49.43.43.133:8080/buildByToken/buildWithParameters?job=jenkins-git&token=11fce885dc7043a5011b4c299e014c4f0d
